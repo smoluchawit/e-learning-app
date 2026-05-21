@@ -70,8 +70,16 @@
             <p class="section__desc">Pytania jednokrotnego wyboru z 4 odpowiedziami i informacją zwrotną.</p>
         </div>
     </div>
-    <div class="section__body section__body--placeholder">
-        <p class="placeholder-text">❓ Tutaj pojawi się quiz.</p>
+    <div class="section__body">
+        <div id="quiz-container">
+            <div class="quiz-meta">
+                <span id="quiz-counter"></span>
+            </div>
+            <p id="quiz-question" class="quiz-question"></p>
+            <div id="quiz-answers" class="quiz-answers"></div>
+            <p id="quiz-feedback" class="quiz-feedback"></p>
+            <button id="quiz-next" class="btn btn--primary" style="display:none">Następne pytanie →</button>
+        </div>
     </div>
 </section>
 
@@ -136,5 +144,6 @@
 </footer>
 
 <script src="main.js"></script>
+<script src="quiz.js"></script>
 </body>
 </html>
