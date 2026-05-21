@@ -1,11 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kotlin – Kurs Interaktywny</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+
+<!-- NAWIGACJA -->
+<header class="navbar">
+    <div class="navbar__logo">
+        <span class="logo-icon">K</span>
+        <span class="logo-text">KotlinLearn</span>
+    </div>
+    <nav class="navbar__links">
+        <a href="#teoria"       class="nav-link" data-section="teoria">Teoria</a>
+        <a href="#quiz"         class="nav-link" data-section="quiz">Quiz</a>
+        <a href="#bloczki"      class="nav-link" data-section="bloczki">Bloczki</a>
+        <a href="#uzupelnianie" class="nav-link" data-section="uzupelnianie">Uzupełnianie</a>
+        <a href="#fiszki"       class="nav-link" data-section="fiszki">Fiszki</a>
+        <a href="#podsumowanie" class="nav-link" data-section="podsumowanie">Podsumowanie</a>
+    </nav>
+    <div class="navbar__progress">
+        <span class="progress-label">Postęp</span>
+        <div class="progress-bar">
+            <div class="progress-bar__fill" style="width: 0%"></div>
+        </div>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero__content">
+        <p class="hero__tag">Interaktywny kurs</p>
+        <h1 class="hero__title">Naucz się<br /><em>Kotlina</em></h1>
+        <p class="hero__sub">Teoria, quizy, ćwiczenia i fiszki – wszystko w jednym miejscu.</p>
+        <a href="#teoria" class="btn btn--primary">Zacznij naukę →</a>
+    </div>
+    <div class="hero__graphic">
+        <div class="code-block">
+            <span class="cb-line"><span class="cb-kw">fun</span> <span class="cb-fn">main</span>() {</span>
+            <span class="cb-line cb-indent"><span class="cb-fn">println</span>(<span class="cb-str">"Witaj w Kotlinie!"</span>)</span>
+            <span class="cb-line">}</span>
+        </div>
+    </div>
+</section>
+
+<!-- SEKCJA: TEORIA -->
+<section id="teoria" class="section">
+    <div class="section__header">
+        <span class="section__number">01</span>
+        <div>
+            <h2 class="section__title">Treści edukacyjne</h2>
+            <p class="section__desc">Sekcje z teorią na temat Kotlina.</p>
+        </div>
+    </div>
+    <div class="section__body section__body--placeholder">
+        <p class="placeholder-text">📖 Tutaj pojawi się teoria o Kotlinie.</p>
+    </div>
+</section>
+
+<!-- SEKCJA: QUIZ -->
+<section id="quiz" class="section section--alt">
+    <div class="section__header">
+        <span class="section__number">02</span>
+        <div>
+            <h2 class="section__title">Quiz ABCD</h2>
+            <p class="section__desc">Pytania jednokrotnego wyboru z 4 odpowiedziami i informacją zwrotną.</p>
+        </div>
+    </div>
+    <div class="section__body section__body--placeholder">
+        <p class="placeholder-text">❓ Tutaj pojawi się quiz.</p>
+    </div>
+</section>
+
+<!-- SEKCJA: BLOCZKI -->
+<section id="bloczki" class="section">
+    <div class="section__header">
+        <span class="section__number">03</span>
+        <div>
+            <h2 class="section__title">Bloczki (Drag &amp; Drop)</h2>
+            <p class="section__desc">Przeciąganie fragmentów kodu we właściwej kolejności.</p>
+        </div>
+    </div>
+    <div class="section__body section__body--placeholder">
+        <p class="placeholder-text">🧩 Tutaj pojawią się bloczki do ułożenia.</p>
+    </div>
+</section>
+
+<!-- SEKCJA: UZUPEŁNIANIE KODU -->
+<section id="uzupelnianie" class="section section--alt">
+    <div class="section__header">
+        <span class="section__number">04</span>
+        <div>
+            <h2 class="section__title">Uzupełnianie kodu</h2>
+            <p class="section__desc">Wpisywanie brakujących fragmentów kodu w puste pola.</p>
+        </div>
+    </div>
+    <div class="section__body section__body--placeholder">
+        <p class="placeholder-text">⌨️ Tutaj pojawi się ćwiczenie uzupełniania kodu.</p>
+    </div>
+</section>
+
+<!-- SEKCJA: FISZKI -->
+<section id="fiszki" class="section">
+    <div class="section__header">
+        <span class="section__number">05</span>
+        <div>
+            <h2 class="section__title">Fiszki (Flashcards)</h2>
+            <p class="section__desc">Interaktywne karty z pytaniem i ukrytą odpowiedzią.</p>
+        </div>
+    </div>
+    <div class="section__body section__body--placeholder">
+        <p class="placeholder-text">🃏 Tutaj pojawią się fiszki.</p>
+    </div>
+</section>
+
+<!-- SEKCJA: PODSUMOWANIE -->
+<section id="podsumowanie" class="section section--alt">
+    <div class="section__header">
+        <span class="section__number">06</span>
+        <div>
+            <h2 class="section__title">Podsumowanie</h2>
+            <p class="section__desc">Ekran końcowy zliczający punkty i wystawiający ocenę.</p>
+        </div>
+    </div>
+    <div class="section__body section__body--placeholder">
+        <p class="placeholder-text">🏆 Tutaj pojawi się ekran podsumowania.</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>KotlinLearn &copy; 2026 — projekt zespołowy</p>
+</footer>
+
+<script src="main.js"></script>
 </body>
 </html>
