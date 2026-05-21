@@ -172,8 +172,16 @@
             <p class="section__desc">Ekran końcowy zliczający punkty i wystawiający ocenę.</p>
         </div>
     </div>
-    <div class="section__body section__body--placeholder">
-        <p class="placeholder-text">🏆 Tutaj pojawi się ekran podsumowania.</p>
+    <div class="section__body">
+        <div class="podsumowanie-container">
+            <button id="btn-podsumowanie" class="btn btn--primary">Zakończ kurs i oblicz wynik</button>
+            <div id="wynik-box" class="wynik-box" style="display: none;">
+                <h3 class="wynik-title">Twój wynik końcowy:</h3>
+                <div class="wynik-punkty" id="wynik-punkty">0 / 7 pkt</div>
+                <div class="wynik-procent" id="wynik-procent">0%</div>
+                <div class="wynik-ocena" id="wynik-ocena">Ocena: 2.0 (niedostateczny)</div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -186,5 +194,6 @@
 <script src="bloczki.js"></script>
 <script src="uzupelnianie.js"></script>
 <script src="fiszki.js"></script>
+<script src="podsumowanie.js"></script>
 </body>
 </html>

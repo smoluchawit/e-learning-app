@@ -286,3 +286,20 @@ a { color: inherit; text-decoration: none; }
 .fiszka:hover .fiszka__front {
     border-color: var(--accent);
 }
+
+/* --- PODSUMOWANIE --- */
+.podsumowanie-container { text-align: center; padding: 2rem; }
+.wynik-box {
+    margin-top: 2rem;
+    padding: 2.5rem;
+    background: var(--surface);
+    border: 2px solid var(--accent);
+    border-radius: var(--radius);
+    display: inline-block;
+    min-width: 300px;
+    box-shadow: 0 8px 32px rgba(169,124,255,0.2);
+}
+.wynik-title { font-size: 1.25rem; color: var(--text-muted); margin-bottom: 1rem; }
+.wynik-punkty { font-size: 3rem; font-weight: 700; color: var(--text); font-family: var(--font-mono); margin-bottom: 0.5rem; }
+.wynik-procent { font-size: 1.5rem; color: var(--accent2); margin-bottom: 1.5rem; }
+.wynik-ocena { font-size: 2rem; font-weight: 700; color: var(--accent); padding-top: 1rem; border-top: 1px solid var(--border); }
