@@ -188,3 +188,45 @@ a { color: inherit; text-decoration: none; }
 .bloczki-feedback.wrong { color: #ff5555; }
 .btn--secondary { background: var(--surface); color: var(--text); border: 1px solid var(--border); margin-left: 1rem; }
 .btn--secondary:hover { border-color: var(--accent); }
+
+/* --- UZUPEŁNIANIE KODU --- */
+.uzupelnianie-instruction { color: var(--text-muted); margin-bottom: 1.5rem; }
+.uzupelnianie-block { margin-bottom: 1.5rem; }
+.cb-type { color: #8be9fd; }
+
+.code-input {
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    border-bottom: 2px dashed var(--border);
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 1.05rem;
+    width: 4.5rem;
+    text-align: center;
+    outline: none;
+    padding: 0.2rem;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.2s;
+}
+
+.code-input:focus { 
+    border-bottom-style: solid; 
+    border-bottom-color: var(--accent); 
+    background: rgba(169, 124, 255, 0.1);
+}
+
+.code-input.correct { 
+    border-bottom-style: solid; 
+    border-bottom-color: var(--accent2); 
+    color: var(--accent2); 
+}
+
+.code-input.wrong { 
+    border-bottom-style: solid; 
+    border-bottom-color: #ff5555; 
+    color: #ff5555; 
+}
+
+.uzupelnianie-feedback { margin-top: 1rem; font-size: 0.95rem; min-height: 1.5rem; }
+.uzupelnianie-feedback.correct { color: var(--accent2); }
+.uzupelnianie-feedback.wrong { color: #ff5555; }
