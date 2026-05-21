@@ -53,8 +53,55 @@
             <p class="section__desc">Sekcje z teorią na temat Kotlina.</p>
         </div>
     </div>
-    <div class="section__body section__body--placeholder">
-        <p class="placeholder-text">📖 Tutaj pojawi się teoria o Kotlinie.</p>
+    <div class="section__body">
+        <div class="teoria-container">
+            <div class="section__body">
+                <div class="teoria-container">
+
+                    <article class="teoria-card">
+                        <h3 class="teoria-card__title">1. Deklaracja funkcji</h3>
+                        <p class="teoria-card__text">
+                            W Kotlinie funkcję deklarujemy słowem kluczowym <code>fun</code>.
+                            Najprostsza funkcja wygląda tak:
+                        </p>
+                        <pre class="teoria-code"><code><span class="cb-kw">fun</span> <span class="cb-fn">przywitaj</span>() {
+    <span class="cb-fn">println</span>(<span class="cb-str">"Cześć!"</span>)
+}</code></pre>
+                    </article>
+
+                    <article class="teoria-card">
+                        <h3 class="teoria-card__title">2. Parametry funkcji</h3>
+                        <p class="teoria-card__text">
+                            Parametry podajemy w nawiasach w formacie <code>nazwa: Typ</code>.
+                            Możemy też nadać im wartości domyślne.
+                        </p>
+                        <pre class="teoria-code"><code><span class="cb-kw">fun</span> <span class="cb-fn">przywitaj</span>(imie: String, wiek: Int = 18) {
+    <span class="cb-fn">println</span>(<span class="cb-str">"Cześć $imie, masz $wiek lat!"</span>)
+}</code></pre>
+                    </article>
+
+                    <article class="teoria-card">
+                        <h3 class="teoria-card__title">3. Wartość zwracana</h3>
+                        <p class="teoria-card__text">
+                            Typ zwracany podajemy po dwukropku za nawiasem. Używamy słowa <code>return</code>.
+                            Jeśli funkcja nic nie zwraca — zwraca <code>Unit</code> (można pominąć).
+                        </p>
+                        <pre class="teoria-code"><code><span class="cb-kw">fun</span> <span class="cb-fn">dodaj</span>(a: Int, b: Int): Int {
+    <span class="cb-kw">return</span> a + b
+}</code></pre>
+                    </article>
+
+                    <article class="teoria-card">
+                        <h3 class="teoria-card__title">4. Funkcja jednolinijkowa</h3>
+                        <p class="teoria-card__text">
+                            Jeśli funkcja zwraca tylko jedno wyrażenie, możemy skrócić zapis używając <code>=</code>.
+                        </p>
+                        <pre class="teoria-code"><code><span class="cb-kw">fun</span> <span class="cb-fn">dodaj</span>(a: Int, b: Int): Int = a + b</code></pre>
+                    </article>
+
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
