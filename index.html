@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<!-- NAWIGACJA -->
 <header class="navbar">
     <div class="navbar__logo">
         <span class="logo-icon">K</span>
@@ -30,7 +29,6 @@
     </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
     <div class="hero__content">
         <p class="hero__tag">Interaktywny kurs</p>
@@ -47,7 +45,6 @@
     </div>
 </section>
 
-<!-- SEKCJA: TEORIA -->
 <section id="teoria" class="section">
     <div class="section__header">
         <span class="section__number">01</span>
@@ -61,7 +58,6 @@
     </div>
 </section>
 
-<!-- SEKCJA: QUIZ -->
 <section id="quiz" class="section section--alt">
     <div class="section__header">
         <span class="section__number">02</span>
@@ -83,7 +79,6 @@
     </div>
 </section>
 
-<!-- SEKCJA: BLOCZKI -->
 <section id="bloczki" class="section">
     <div class="section__header">
         <span class="section__number">03</span>
@@ -109,7 +104,6 @@
     </div>
 </section>
 
-<!-- SEKCJA: UZUPEŁNIANIE KODU -->
 <section id="uzupelnianie" class="section section--alt">
     <div class="section__header">
         <span class="section__number">04</span>
@@ -118,12 +112,25 @@
             <p class="section__desc">Wpisywanie brakujących fragmentów kodu w puste pola.</p>
         </div>
     </div>
-    <div class="section__body section__body--placeholder">
-        <p class="placeholder-text">⌨️ Tutaj pojawi się ćwiczenie uzupełniania kodu.</p>
+    <div class="section__body">
+        <p class="uzupelnianie-instruction">Wpisz brakujące słowa kluczowe, aby poprawnie zdefiniować funkcję zwracającą sumę dwóch liczb (użyj małych liter):</p>
+        
+        <div class="code-block uzupelnianie-block">
+            <span class="cb-line">
+                <input type="text" id="gap1" class="code-input" autocomplete="off" placeholder="..." /> <span class="cb-fn">obliczSume</span>(a: <span class="cb-type">Int</span>, b: <span class="cb-type">Int</span>): <span class="cb-type">Int</span> {
+            </span>
+            <span class="cb-line cb-indent"><span class="cb-kw">val</span> suma = a + b</span>
+            <span class="cb-line cb-indent">
+                <input type="text" id="gap2" class="code-input" autocomplete="off" placeholder="..." /> suma
+            </span>
+            <span class="cb-line">}</span>
+        </div>
+        
+        <button id="uzupelnianie-check" class="btn btn--primary">Sprawdź kod</button>
+        <p id="uzupelnianie-feedback" class="uzupelnianie-feedback"></p>
     </div>
 </section>
 
-<!-- SEKCJA: FISZKI -->
 <section id="fiszki" class="section">
     <div class="section__header">
         <span class="section__number">05</span>
@@ -137,7 +144,6 @@
     </div>
 </section>
 
-<!-- SEKCJA: PODSUMOWANIE -->
 <section id="podsumowanie" class="section section--alt">
     <div class="section__header">
         <span class="section__number">06</span>
@@ -158,5 +164,6 @@
 <script src="main.js"></script>
 <script src="quiz.js"></script>
 <script src="bloczki.js"></script>
+<script src="uzupelnianie.js"></script>
 </body>
 </html>
