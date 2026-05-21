@@ -92,8 +92,20 @@
             <p class="section__desc">Przeciąganie fragmentów kodu we właściwej kolejności.</p>
         </div>
     </div>
-    <div class="section__body section__body--placeholder">
-        <p class="placeholder-text">🧩 Tutaj pojawią się bloczki do ułożenia.</p>
+    <div class="section__body">
+        <p class="bloczki-instruction">Ułóż linie kodu w poprawnej kolejności, aby zdefiniować funkcję w Kotlinie:</p>
+        <div class="bloczki-area">
+            <div id="bloczki-list" class="bloczki-list">
+                <div class="bloczek" draggable="true" data-index="0">println("Wynik: $wynik")</div>
+                <div class="bloczek" draggable="true" data-index="1">fun oblicz(a: Int, b: Int): Int {</div>
+                <div class="bloczek" draggable="true" data-index="2">val wynik = a + b</div>
+                <div class="bloczek" draggable="true" data-index="3">return wynik</div>
+                <div class="bloczek" draggable="true" data-index="4">}</div>
+            </div>
+        </div>
+        <button id="bloczki-check" class="btn btn--primary">Sprawdź kolejność</button>
+        <p id="bloczki-feedback" class="bloczki-feedback"></p>
+        <button id="bloczki-reset" class="btn btn--secondary">Resetuj</button>
     </div>
 </section>
 
@@ -145,5 +157,6 @@
 
 <script src="main.js"></script>
 <script src="quiz.js"></script>
+<script src="bloczki.js"></script>
 </body>
 </html>
